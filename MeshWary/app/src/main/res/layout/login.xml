@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/mapbg"
+    android:orientation="vertical"
+    android:backgroundTint="#CDFFFFFF"
+    android:backgroundTintMode="src_over">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="175dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#fff"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/EnterEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="#6C6C6C"
+        android:layout_gravity="center"
+        android:textColorHint="#6C6C6C" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:textColorHint="#6C6C6C"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#6C6C6C">
+
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/enter_Password"
+            android:inputType="textPassword"
+            android:textColor="#6C6C6C"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:text="@string/Login"
+        android:textColor="#FF2600" />
+
+        <Button
+        android:id="@+id/link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:gravity="center"
+        android:text="@string/No_account_yet"
+        android:textColor="#ff5c62"
+        android:textSize="16dip" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="299dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="38dp"/>
+    </LinearLayout>
+
+</ScrollView>
